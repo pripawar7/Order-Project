@@ -1,0 +1,50 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd http://www.springframework.org/schema/aop 
+		http://www.springframework.org/schema/aop/spring-aop-3.0.xsd"
+>
+	<context:property-placeholder location="classpath:/META-INF/state.properties" />
+	<context:annotation-config />
+	<context:component-scan base-package="com.as.order.services" />
+
+	<!-- add your bean definitions here! -->
+
+	<util:map id="stateSalesTax">
+		<entry key="CA" value="${state.CA}" />
+		<entry key="NJ" value="${state.NJ}" />
+		<entry key="NY" value="${state.NY}" />
+		<entry key="TX" value="${state.TX}" />
+		<entry key="IL" value="${state.IL}" />
+	</util:map>
+	
+	<!-- <util:map id="stateVATTax">
+		<entry key="CA" value="${VAT.CA}" />
+		<entry key="NJ" value="${VAT.NJ}" />
+		<entry key="NY" value="${VAT.NY}" />
+		<entry key="TX" value="${VAT.TX}" />
+		<entry key="IL" value="${VAT.IL}" />
+	</util:map> -->
+
+	<!-- <bean id="taxServices" class="npu.services.ComputeSalesTax"> <property 
+		name="stateSalesTax" > <map> <entry key="CA" value="${state.CA}"/> <entry 
+		key="NJ" value="${state.NJ}"/> <entry key="NY" value="${state.NY}"/> <entry 
+		key="TX" value="${state.TX}"/> <entry key="IL" value="${state.IL}"/> </map> 
+		</property> </bean> -->
+
+
+	<!-- <bean id="inventoryService" class="npu.services.InventoryServiceImpl"></bean> -->
+
+	<!-- <bean id="acctService" class="npu.services.AccountingServiceImpl" autowire="byName"/> -->
+
+	<!-- <bean id="orderProcessor" class="npu.services.OrderProcessor" autowire="byName"/> -->
+
+	<!-- Aspect bean defination -->
+
+	<aop:aspectj-autoproxy proxy-target-class="true" />
+	<bean id="" class="com.as.order.advice.OrderAdvice"/>
+
+</beans>

@@ -1,0 +1,14 @@
+D:\sts-newws\OrderProcLab3\src\main\java\com\as\order\services\OrderProcessor.java
+D:\sts-newws\OrderProcLab3\src\main\java\com\as\order\domain\Customer.java
+D:\sts-newws\OrderProcLab3\src\main\java\com\as\order\services\AccountingService.java
+D:\sts-newws\OrderProcLab3\src\main\java\com\as\order\services\ComputeVATTax.java
+D:\sts-newws\OrderProcLab3\src\main\java\com\as\order\services\AccountingServiceImpl.java
+D:\sts-newws\OrderProcLab3\src\main\java\com\as\order\client\OrderApplication.java
+D:\sts-newws\OrderProcLab3\src\main\java\com\as\order\services\TaxServices.java
+D:\sts-newws\OrderProcLab3\src\main\java\com\as\order\domain\Product.java
+D:\sts-newws\OrderProcLab3\src\main\java\com\as\order\services\InventoryServiceImpl.java
+D:\sts-newws\OrderProcLab3\src\main\java\com\as\order\services\InventoryService.java
+D:\sts-newws\OrderProcLab3\src\main\java\com\as\order\services\ComputeSalesTax.java
+D:\sts-newws\OrderProcLab3\src\main\java\com\as\order\domain\OrderItem.java
+D:\sts-newws\OrderProcLab3\src\main\java\com\as\order\services\BillingService.java
+D:\sts-newws\OrderProcLab3\src\main\java\com\as\order\domain\Order.java
